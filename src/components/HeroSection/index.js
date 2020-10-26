@@ -29,7 +29,12 @@ const HeroSection = () => {
         <HeroP>WE MUST ACHIEVE ZERO EMISSION IN:</HeroP>
         <HeroH1>00:00:00:00:00</HeroH1>
         <HeroBtnWrapper>
-          <Button to="register" onMouseEnter={onHover} onMouseLeave={onHover}>
+          <Button
+            to="register"
+            primary="true"
+            onMouseEnter={onHover}
+            onMouseLeave={onHover}
+          >
             Get Started {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
