@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import {
   Nav,
@@ -13,15 +13,31 @@ import {
 } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
+  const [scrollNav, setScrollnav] = useState(false);
+
+  const changeNav = () => {
+    if (window.scrollY >= 80) {
+      setScrollnav(true);
+    } else {
+      setScrollnav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNav);
+  }, []);
+
   return (
     <>
-      <Nav>
+      <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to="/">cens</NavLogo>
-          <MobileIcon onClick={toggle}>
+          <NavLogo to="/" scrollNav={scrollNav}>
+            cens
+          </NavLogo>
+          <MobileIcon onClick={toggle} scrollNav={scrollNav}>
             <FaBars />
           </MobileIcon>
-          <NavMenu>
+          <NavMenu scrollNav={scrollNav}>
             <NavItem>
               <NavLinks to="about">Home</NavLinks>
             </NavItem>
