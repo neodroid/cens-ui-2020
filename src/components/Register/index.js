@@ -31,10 +31,10 @@ const Register = () => {
             <FormLabel htmlFor="for">Country of Origin</FormLabel>
             <FormInput type="text" required placeholder="Indonesia" />
             <FormLabel htmlFor="for">Name of Team Captain</FormLabel>
-            <FormInput type="text" required placeholder="placeholder" />
+            <FormInput type="text" required placeholder="Name" />
             <FormLabel htmlFor="for">Team Captain's Email</FormLabel>
             <FormInput type="email" required placeholder="Email" />
-            <FormLabel htmlFor="for">Team Captain's Email</FormLabel>
+            <FormLabel htmlFor="for">Team Captain's Phone Number</FormLabel>
             <FormInput type="number" required placeholder="Phone Number" />
             <FormLabel htmlFor="for">Name of Team Member 1</FormLabel>
             <FormInput type="text" required placeholder="Name 1" />
