@@ -10,6 +10,7 @@ import {
   NavLinks,
   NavBtn,
   NavBtnLink,
+  LogoImage,
 } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
@@ -33,26 +34,37 @@ const Navbar = ({ toggle }) => {
         <NavbarContainer>
           <NavLogo to="/" scrollNav={scrollNav}>
             cens
+            {/* <LogoImage /> */}
           </NavLogo>
           <MobileIcon onClick={toggle} scrollNav={scrollNav}>
             <FaBars />
           </MobileIcon>
           <NavMenu scrollNav={scrollNav}>
             <NavItem>
-              <NavLinks to="/">Home</NavLinks>
+              <NavLinks to="/" scrollNav={scrollNav}>
+                Home
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="discover">About</NavLinks>
+              <NavLinks to="/discover" scrollNav={scrollNav}>
+                About
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="services">Partners</NavLinks>
+              <NavLinks to="/services" scrollNav={scrollNav}>
+                Partners
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="register">Events</NavLinks>
+              <NavLinks to="/register" scrollNav={scrollNav}>
+                Events
+              </NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/register">Register</NavBtnLink>
+            <NavBtnLink to="/register" scrollNav={scrollNav}>
+              Register
+            </NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>

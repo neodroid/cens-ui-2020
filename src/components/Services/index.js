@@ -9,6 +9,8 @@ import {
   ServicesH2,
   ServicesP,
   ServicesCard,
+  ServicesCardInside,
+  Button,
 } from "./ServicesElements";
 
 const Services = () => {
@@ -19,18 +21,24 @@ const Services = () => {
         <ServicesCard img={Icon1}>
           {/* <ServicesIcon src={Icon1} /> */}
           <ServicesH2>CFI</ServicesH2>
-          {/* <ServicesP>
+          <ServicesP>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor.
-          </ServicesP> */}
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </ServicesP>
+          <Button>Learn More </Button>
         </ServicesCard>
         <ServicesCard img={Icon2}>
           {/* <ServicesIcon src={Icon2}></ServicesIcon> */}
           <ServicesH2>National Summit</ServicesH2>
-          {/* <ServicesP>
+          <ServicesP>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor.
-          </ServicesP> */}
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </ServicesP>
+          <Button>Learn More </Button>
         </ServicesCard>
       </ServicesWrapper>
     </ServicesContainer>

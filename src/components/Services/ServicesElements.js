@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Icon1 from "../../images/logo_cfi.png";
 
 export const ServicesContainer = styled.div`
   height: 800px;
@@ -52,11 +51,15 @@ export const ServicesCard = styled.div`
   padding: 30px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2 ease-in-out;
+  z-index: 1;
 
   &:hover {
     transform: scale(1.02);
-    transition: all 0.2s ease-in-out;
+    transition: all 0.4s ease-in-out;
     cursor: pointer;
+    /* opacity: -100%; */
+    background-image: url();
+    background-color: #fff;
   }
 `;
 
@@ -83,9 +86,48 @@ export const ServicesH2 = styled.h2`
   color: #fff;
   justify-self: center;
   /* margin-left: 30px; */
+  display: block;
+
+  ${ServicesCard}:hover & {
+    display: none;
+  }
 `;
 
 export const ServicesP = styled.p`
   font-size: 1rem;
   text-align: center;
+  display: none;
+
+  ${ServicesCard}:hover & {
+    display: block;
+  }
+`;
+
+export const Button = styled.button`
+  border-radius: 50px;
+  background: #09508b;
+  padding: 12px 30px;
+  width: 100%;
+  margin-top: 20px;
+  white-space: nowrap;
+  outline: none;
+  border: none;
+  display: flex;
+  transition: all 0.2s ease-in-out;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  display: none;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #09508b;
+  }
+
+  ${ServicesCard}:hover & {
+    display: block;
+  }
 `;

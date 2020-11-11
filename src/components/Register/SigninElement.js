@@ -15,7 +15,8 @@ export const Container = styled.div`
     rgba(1, 147, 86, 1) 0%,
     rgba(0, 201, 122, 1) 100%
   ); */
-  background: #09508b;
+  background: #868686;
+  transition: all 0.2s ease-in-out;
 `;
 
 export const FormWrap = styled.div`

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
-import { Link as LinkS } from "react-scroll";
+import Icon1 from "../../images/logo.png";
 
 export const Nav = styled.nav`
   background: ${({ scrollNav }) => (scrollNav ? "#fff" : "transparent")};
@@ -73,13 +73,14 @@ export const NavItem = styled.li`
   height: 80px;
 `;
 
-export const NavLinks = styled(LinkS)`
+export const NavLinks = styled(LinkR)`
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
-  height: 100%;
+  height: 80%;
   cursor: pointer;
+  color: ${({ scrollNav }) => (scrollNav ? "#000" : "#fff")};
 
   &.active {
     border-bottom: 3px solid #09508b;
@@ -88,6 +89,8 @@ export const NavLinks = styled(LinkS)`
   &:hover {
     color: #09508b;
     transition: 0.2s ease-in-out;
+    border-color: #09508b;
+    border-bottom: 3px solid #09508b;
   }
 `;
 
@@ -118,4 +121,10 @@ export const NavBtnLink = styled(LinkR)`
     background: #fff;
     color: #09508b;
   }
+`;
+
+export const LogoImage = styled.img`
+  src: url(${Icon1});
+  width: 100%;
+  height: 100%;
 `;

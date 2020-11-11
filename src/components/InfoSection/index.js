@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../ButtonElement";
+import Bg1 from "../../images/pagehome_about.png";
 import {
   InfoContainer,
   InfoWrapper,
@@ -30,7 +31,7 @@ const InfoSection = ({
 }) => {
   return (
     <>
-      <InfoContainer lightBg={lightBg} id={id}>
+      <InfoContainer lightBg={lightBg} id={id} img={Bg1}>
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
             <Column1>

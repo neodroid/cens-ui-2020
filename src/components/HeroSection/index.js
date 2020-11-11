@@ -15,13 +15,11 @@ import {
 
 const HeroSection = () => {
   const [hover, sethover] = useState(false);
-  const [seconds, setSeconds] = useState(0);
-  const [minutes, setMinutes] = useState(0);
-  const [hours, setHours] = useState(0);
-  const [days, setDays] = useState(0);
-  const [years, setYears] = useState(0);
-  const [yearsInDays, setYearsInDays] = useState(0);
-  const [gapDays, setGapDays] = useState(0);
+  const [seconds, setSeconds] = useState(20);
+  const [minutes, setMinutes] = useState(42);
+  const [hours, setHours] = useState(17);
+  const [days, setDays] = useState(51);
+  const [years, setYears] = useState(7);
 
   const onHover = () => {
     sethover(!hover);
@@ -32,17 +30,11 @@ const HeroSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       var now = new Date().getTime();
-
-      // Find the distance between now and the count down date
       var distance = countDownDate - now;
-
-      // Time calculations for days, hours, minutes and seconds
 
       setYears(Math.floor(distance / (1000 * 60 * 60 * 24 * 365)));
 
-      setDays(
-        Math.floor(distance / (1000 * 60 * 60 * 24) - years * 365) - 2555
-      );
+      setDays(Math.floor(distance / (1000 * 60 * 60 * 24)) - 2555);
 
       setHours(
         Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))

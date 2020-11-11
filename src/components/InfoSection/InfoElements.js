@@ -3,8 +3,11 @@ import styled from "styled-components";
 export const InfoContainer = styled.div`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? "#fff" : "#000")};
-  /* background-image: url(../../images/pagehome_about.png); */
-  /* height: wrap; */
+  background-image: url(${(props) => props.img});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
   @media screen and (max-width: 768px) {
     padding: 100px 0;
   }
@@ -23,7 +26,7 @@ export const InfoWrapper = styled.div`
 `;
 
 export const InfoRow = styled.div`
-  background-color: "#fff";
+  /* background-color: "#fff"; */
   background: "#fff";
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
