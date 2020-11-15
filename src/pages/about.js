@@ -1,10 +1,12 @@
 import React from "react";
+import LogoAbout from "../components/LogoAbout";
+import { aboutObjOne } from "../components/InfoSection/Data";
 
 const AboutPage = () => {
   return (
-    <div>
-      <h1>About</h1>
-    </div>
+    <>
+      <LogoAbout {...aboutObjOne} />
+    </>
   );
 };
 

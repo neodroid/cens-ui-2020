@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Container = styled.div`
-  height: 1500px;
+  height: 1200px;
   /* position: absolute; */
   bottom: 0;
   left: 0;
@@ -15,7 +15,7 @@ export const Container = styled.div`
     rgba(1, 147, 86, 1) 0%,
     rgba(0, 201, 122, 1) 100%
   ); */
-  background: #868686;
+  background: #e6edf3;
   transition: all 0.2s ease-in-out;
 `;
 
@@ -55,7 +55,7 @@ export const FormContent = styled.div`
 `;
 
 export const Form = styled.form`
-  background: #010101;
+  background: #e6edf3;
   width: 600px;
   height: auto;
   z-index: 1;
@@ -73,7 +73,7 @@ export const Form = styled.form`
 
 export const FormH1 = styled.h1`
   margin-bottom: 40px;
-  color: #fff;
+  color: #333;
   font-size: 20px;
   font-weight: 400;
   text-align: center;
@@ -82,7 +82,7 @@ export const FormH1 = styled.h1`
 export const FormLabel = styled.label`
   margin-bottom: 8px;
   font-size: 14px;
-  color: #fff;
+  color: #333;
 `;
 
 export const FormInput = styled.input`

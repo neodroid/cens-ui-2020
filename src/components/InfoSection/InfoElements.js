@@ -16,6 +16,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
+  height: 600px;
   /* height: 840px; */
   width: 100%;
   max-width: 1100px;
@@ -89,7 +90,7 @@ export const Subtitle = styled.p`
 `;
 
 export const BtnWrap = styled.div`
-  display: flex;
+  display: ${({ button }) => (button ? "flex" : "none")};
   justify-content: flex-start;
 `;
 

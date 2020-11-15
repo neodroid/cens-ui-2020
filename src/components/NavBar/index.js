@@ -11,6 +11,7 @@ import {
   NavBtn,
   NavBtnLink,
   LogoImage,
+  NavbarDropdownContent,
 } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
@@ -46,18 +47,26 @@ const Navbar = ({ toggle }) => {
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/discover" scrollNav={scrollNav}>
+              <NavLinks to="/about" scrollNav={scrollNav}>
                 About
               </NavLinks>
             </NavItem>
-            <NavItem>
-              <NavLinks to="/services" scrollNav={scrollNav}>
+            {/* <NavItem>
+              <NavLinks to="/partners" scrollNav={scrollNav}>
                 Partners
               </NavLinks>
-            </NavItem>
+            </NavItem> */}
             <NavItem>
-              <NavLinks to="/register" scrollNav={scrollNav}>
+              <NavLinks to="" scrollNav={scrollNav}>
                 Events
+                <NavbarDropdownContent>
+                  <NavLinks to="/cfi" scrollNav={true}>
+                    CFI
+                  </NavLinks>
+                  <NavLinks to="/summit" scrollNav={true}>
+                    National Summit
+                  </NavLinks>
+                </NavbarDropdownContent>
               </NavLinks>
             </NavItem>
           </NavMenu>

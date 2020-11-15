@@ -19,7 +19,7 @@ const Register = () => {
         {/* <Icon to="/">cens</Icon> */}
         <FormContent>
           <Form action="#">
-            <FormH1>Register your team!</FormH1>
+            {/* <FormH1>Register your team!</FormH1> */}
             <FormLabel htmlFor="for">Team Name</FormLabel>
             <FormInput type="text" required placeholder="Team Name" />
             <FormLabel htmlFor="for">University/Institution</FormLabel>

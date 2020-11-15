@@ -22,10 +22,15 @@ const Services = () => {
           {/* <ServicesIcon src={Icon1} /> */}
           <ServicesH2>CFI</ServicesH2>
           <ServicesP>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Call for Innovation is an annual competition brought by CENS UI,
+            where students are challenged to provide a viable solution to help
+            new generations successfully address future problems in the built
+            environment. <br />
+            <br />
+            Are you a student with ideas on how to transform the built
+            environment? Put together a team and take part in our call for
+            innovation by developing an innovative project that will take the
+            construction industry to the next level.
           </ServicesP>
           <Button>Learn More </Button>
         </ServicesCard>
@@ -33,10 +38,11 @@ const Services = () => {
           {/* <ServicesIcon src={Icon2}></ServicesIcon> */}
           <ServicesH2>National Summit</ServicesH2>
           <ServicesP>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            The Summit is a series of events designed to prepare young leaders
+            from all over Indonesia to face the challenges in the built
+            environment as well as to encourage young people to make a
+            progressive and sustainable shift towards a better Indonesia. All
+            participants will be selected through a national essay competition.
           </ServicesP>
           <Button>Learn More </Button>
         </ServicesCard>

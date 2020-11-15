@@ -27,6 +27,7 @@ export const NavbarContainer = styled.div`
   width: 100%;
   padding: 0 24px;
   max-width: 1100px;
+  /* position: relative; */
 `;
 
 export const NavLogo = styled(LinkR)`
@@ -73,10 +74,24 @@ export const NavItem = styled.li`
   height: 80px;
 `;
 
+export const NavbarDropdownContent = styled.div`
+  border-radius: 50;
+  margin-top: 130px;
+  display: none;
+  color: #333;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0, 2);
+  padding: 12px 16px;
+  z-index: 1;
+`;
+
 export const NavLinks = styled(LinkR)`
   display: flex;
   align-items: center;
   text-decoration: none;
+  margin-top: 5px;
   padding: 0 1rem;
   height: 80%;
   cursor: pointer;
@@ -91,6 +106,10 @@ export const NavLinks = styled(LinkR)`
     transition: 0.2s ease-in-out;
     border-color: #09508b;
     border-bottom: 3px solid #09508b;
+  }
+
+  &:hover ${NavbarDropdownContent} {
+    display: block;
   }
 `;
 

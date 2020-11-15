@@ -34,7 +34,7 @@ const HeroSection = () => {
 
       setYears(Math.floor(distance / (1000 * 60 * 60 * 24 * 365)));
 
-      setDays(Math.floor(distance / (1000 * 60 * 60 * 24)) - 2555);
+      setDays(Math.floor(distance / (1000 * 60 * 60 * 24)) - 2556);
 
       setHours(
         Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
