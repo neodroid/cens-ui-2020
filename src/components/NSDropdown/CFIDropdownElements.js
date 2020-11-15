@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Container = styled.div`
-  height: 1200px;
+  height: 500px;
   /* position: absolute; */
   bottom: 0;
   left: 0;
@@ -15,7 +15,7 @@ export const Container = styled.div`
     rgba(1, 147, 86, 1) 0%,
     rgba(0, 201, 122, 1) 100%
   ); */
-  background: #e6edf3;
+  background: #fff;
   transition: all 0.2s ease-in-out;
 `;
 
@@ -55,14 +55,14 @@ export const FormContent = styled.div`
 `;
 
 export const Form = styled.form`
-  background: #e6edf3;
+  background: #fff;
   width: 600px;
   height: auto;
   z-index: 1;
   display: grid;
   margin: 0 auto;
-  padding: 80px 32px;
-  border-radius: 4px;
+  padding: 32px 32px;
+  border-radius: 40px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 
   @media screen and (max-width: 600px) {
@@ -126,7 +126,7 @@ export const Text = styled.span`
 export const DropDownContent = styled.div`
   width: 550px;
   display: none;
-  /* position: absolute; */
+  position: absolute;
   background-color: #f0f0f0;
   /* min-width: 160px; */
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -139,10 +139,10 @@ export const DropDownContent = styled.div`
 
 export const DropDown = styled.div`
   margin-bottom: 32px;
-  background-color: #fff;
+  background-color: #094f8a;
   display: inline-block;
   border: none;
-  border-radius: 4px;
+  border-radius: 40px;
   cursor: pointer;
   width: 100%;
   > * {
@@ -152,6 +152,7 @@ export const DropDown = styled.div`
   &:focus,
   &:active {
     background-color: rgba(0, 0, 0, 0.1);
+    border: none;
   }
 
   &:focus ${DropDownContent}, &:active ${DropDownContent} {
@@ -164,7 +165,7 @@ export const DropDown = styled.div`
   }
 `;
 export const Dropbtn = styled.div`
-  color: #333;
+  color: #fff;
   display: inline-block;
   text-align: center;
   padding: 14px 16px;

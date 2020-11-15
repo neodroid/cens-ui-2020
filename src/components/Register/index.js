@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   Container,
   Form,
@@ -10,6 +10,9 @@ import {
   Icon,
   FormContent,
   Text,
+  DropDown,
+  Dropbtn,
+  DropDownContent,
 } from "./SigninElement";
 
 const Register = () => {
@@ -17,6 +20,7 @@ const Register = () => {
     <Container>
       <FormWrap>
         {/* <Icon to="/">cens</Icon> */}
+
         <FormContent>
           <Form action="#">
             {/* <FormH1>Register your team!</FormH1> */}

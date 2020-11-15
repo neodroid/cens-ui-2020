@@ -15,42 +15,52 @@ export const InfoContainer = styled.div`
 
 export const InfoWrapper = styled.div`
   display: grid;
+
   z-index: 1;
-  /* height: 600px; */
+  height: 500px;
   /* height: 840px; */
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
+  padding-top: 100px;
   justify-content: center;
 `;
 
 export const InfoRow = styled.div`
   /* background-color: "#fff"; */
   background: "#fff";
-  display: grid;
+  display: flex;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
   grid-template-areas: ${({ imgStart }) =>
     imgStart ? `'col2 col1'` : `'col1 col2'`};
 
   @media screen and (max-width: 768px) {
+    display: grid;
     grid-template-areas: ${({ imgStart }) =>
       imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
   }
 `;
 
 export const Column1 = styled.div`
+  /* background-color: #333; */
   margin-bottom: 15px;
-  padding: 0 15px;
+  padding: 0 50px;
   grid-area: col1;
 `;
 
 export const Column2 = styled.div`
+  justify-content: right;
+  justify-items: right;
+  /* background-color: #fff; */
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col2;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const TextWrapper = styled.div`
@@ -71,7 +81,7 @@ export const TopLine = styled.p`
 
 export const Heading = styled.h1`
   margin-bottom: 24px;
-  font-size: 48px;
+  font-size: 32px;
   line-height: 1.1;
   font-weight: 600;
   color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#0110606")};
@@ -84,7 +94,7 @@ export const Heading = styled.h1`
 export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
 `;
@@ -95,8 +105,8 @@ export const BtnWrap = styled.div`
 `;
 
 export const ImgWrap = styled.div`
-  max-width: 555px;
-  height: 100%;
+  max-width: 300px;
+  height: 70%;
 `;
 
 export const Img = styled.img`

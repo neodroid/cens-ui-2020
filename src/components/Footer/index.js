@@ -31,25 +31,28 @@ const Footer = () => {
             </FooterLinkItems>
             <FooterLinkItems>
               <FooterLinkTitle>Strategic Partners</FooterLinkTitle>
+              {/* <FooterLink to="/">Strategic</FooterLink>
               <FooterLink to="/">Strategic</FooterLink>
               <FooterLink to="/">Strategic</FooterLink>
-              <FooterLink to="/">Strategic</FooterLink>
-              <FooterLink to="/">Strategic</FooterLink>
+              <FooterLink to="/">Strategic</FooterLink> */}
             </FooterLinkItems>
           </FooterLinkWrapper>
           <FooterLinkWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>Media Partners</FooterLinkTitle>
+              {/* <FooterLink to="/">Media</FooterLink>
               <FooterLink to="/">Media</FooterLink>
               <FooterLink to="/">Media</FooterLink>
-              <FooterLink to="/">Media</FooterLink>
-              <FooterLink to="/">Media</FooterLink>
+              <FooterLink to="/">Media</FooterLink> */}
             </FooterLinkItems>
             <FooterLinkItems>
-              <FooterLinkTitle>General Queries</FooterLinkTitle>
-              <FooterLink to="/">Dinda 0812 3456 7879</FooterLink>
-              <FooterLinkTitle>General Queries</FooterLinkTitle>
-              <FooterLink to="/">Dinda 0812 3456 7879</FooterLink>
+              {/* <FooterLinkTitle>General Queries</FooterLinkTitle> */}
+              <FooterLink>Juan </FooterLink>
+              <FooterLink> (+62) 858 6939 8270</FooterLink>
+              <FooterLink>Herwinda</FooterLink>
+              <FooterLink> (+62) 896 6378 5814</FooterLink>
+              <FooterLink>Rizka</FooterLink>
+              <FooterLink> (+62) 812 9676 0588</FooterLink>
             </FooterLinkItems>
           </FooterLinkWrapper>
         </FooterLinksContainer>

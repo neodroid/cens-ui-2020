@@ -57,7 +57,7 @@ const Navbar = ({ toggle }) => {
               </NavLinks>
             </NavItem> */}
             <NavItem>
-              <NavLinks to="" scrollNav={scrollNav}>
+              <NavLinks scrollNav={scrollNav}>
                 Events
                 <NavbarDropdownContent>
                   <NavLinks to="/cfi" scrollNav={true}>

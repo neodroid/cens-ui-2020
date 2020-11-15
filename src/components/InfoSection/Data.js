@@ -28,7 +28,7 @@ export const aboutObjOne = {
   lightText: false,
   lightTextDesc: false,
   topLine: "",
-  headline: "Logo Phylosophy",
+  headline: "Logo Philosophy",
   description1:
     "Main logo stretched toward the right side implies a better future.",
   description2:
@@ -66,6 +66,32 @@ export const cfiObjOne = {
   buttonLabel: "Learn More",
   // imgStart: true,
   img: require("../../images/TanganKotak.png"),
+  alt: "logo",
+  dark: true,
+  primary: true,
+  darkText: false,
+  bg: Bg1,
+};
+
+export const nsObjOne = {
+  id: "logo",
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: "",
+  headline: "National Summit",
+  // description1:
+  //   "Main logo stretched toward the right side implies a better future.",
+  description1:
+    "The Summit is a series of events designed to prepare young leaders from all over Indonesia to face the challenges of the coming years as well as to encourage young people to make a progressive and sustainable shift towards a better Indonesia.",
+  description2:
+    "Are you a student with ideas on how to transform the built environment?",
+  description3:
+    "Put together a team and take part in our call for innovation by developing an innovative project that will take the construction industry to the next level.",
+
+  buttonLabel: "Learn More",
+  // imgStart: true,
+  img: require("../../images/OrangKotak.png"),
   alt: "logo",
   dark: true,
   primary: true,

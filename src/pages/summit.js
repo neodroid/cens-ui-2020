@@ -1,10 +1,16 @@
 import React from "react";
+import NSTheme from "../components/NSTheme";
+import SuummitBanner from "../components/SummitBanner";
+import { nsObjOne } from "../components/InfoSection/Data";
+import NSDropdown from "../components/NSDropdown";
 
 const SummitPage = () => {
   return (
-    <div>
-      <h1>National Summit</h1>
-    </div>
+    <>
+      <SuummitBanner {...nsObjOne} />
+      <NSTheme />
+      <NSDropdown />
+    </>
   );
 };
 
