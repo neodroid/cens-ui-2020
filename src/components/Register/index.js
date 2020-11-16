@@ -85,7 +85,6 @@ const Register = () => {
         {/* <Icon to="/">cens</Icon> */}
         <FormContent>
           <Form action="#" onSubmit={submit} enctype="multipart/form-data">
-            <FormH1>Register your team!</FormH1>
             <FormLabel htmlFor="for">Jenis Lomba</FormLabel>
             <FormInput
               type="text"
