@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Container = styled.div`
-  height: 500px;
+  min-height: 500px;
   /* position: absolute; */
   bottom: 0;
   left: 0;
@@ -62,8 +62,8 @@ export const Form = styled.form`
   display: grid;
   margin: 0 auto;
   padding: 32px 32px;
-  border-radius: 40px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+  /* border-radius: 40px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9); */
 
   @media screen and (max-width: 600px) {
     width: 400px;
@@ -126,7 +126,7 @@ export const Text = styled.span`
 export const DropDownContent = styled.div`
   width: 550px;
   display: none;
-  position: absolute;
+  /* position: absolute; */
   background-color: #f0f0f0;
   /* min-width: 160px; */
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);

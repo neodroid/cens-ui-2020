@@ -118,7 +118,7 @@ const Register = () => {
         {/* <Icon to="/">cens</Icon> */}
         <FormContent>
           <Form action="#" onSubmit={submit} enctype="multipart/form-data">
-            <FormLabel htmlFor="for">Jenis Lomba</FormLabel>
+            <FormLabel htmlFor="for">Competition</FormLabel>
             <Menu />
             {/* <FormLabel htmlFor="for">Jenis Lomba</FormLabel>
             <FormInput

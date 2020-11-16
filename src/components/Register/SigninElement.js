@@ -137,7 +137,7 @@ export const Text = styled.span`
 export const DropDownContent = styled.div`
   width: 550px;
   display: none;
-  /* position: absolute; */
+  position: absolute;
   background-color: #f0f0f0;
   /* min-width: 160px; */
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
