@@ -69,11 +69,15 @@ const Register = () => {
       formData.append("file", file);
 
       setErrorMsg("");
-      await Axios.post(`/api/participants/register`, formData, {
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
-      });
+      await Axios.post(
+        `https://cens-ui.herokuapp.com/api/participants/register`,
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
       history.push("/");
     } else {
       setErrorMsg("Please select a file to add");
