@@ -21,31 +21,8 @@ import {
   Item,
 } from "./SigninElement";
 
-function Menu({ items, value, onChange, placeholder, showFlag }) {
-  const [selected, setSelected] = useState("CFI");
-
-  useEffect(() => {
-    if (onChange) onChange(selected);
-  }, [selected, onChange]);
-
-  return (
-    <DropDown role="button" tabIndex={-1}>
-      <Dropbtn>{selected}</Dropbtn>
-
-      <DropDownContent>
-        <Item role="button" onClick={() => setSelected("CFI")}>
-          CFI
-        </Item>
-        <Item role="button" onClick={() => setSelected("Essay")}>
-          Essay
-        </Item>
-      </DropDownContent>
-    </DropDown>
-  );
-}
-
 const Register = () => {
-  const [lomba, setLomba] = useState();
+  const [lomba, setLomba] = useState("CFI");
   const [teamName, setTeamName] = useState();
   const [university, setUniversity] = useState();
   const [country, setCountry] = useState();
@@ -80,6 +57,27 @@ const Register = () => {
     } else if (dragState === "leave") {
       dropRef.current.style.border = "2px dashed #e9ebeb";
     }
+  };
+
+  const Menu = ({ onChange }) => {
+    useEffect(() => {
+      if (onChange) onChange(lomba);
+    }, [lomba, onChange]);
+
+    return (
+      <DropDown role="button" tabIndex={-1}>
+        <Dropbtn>{lomba}</Dropbtn>
+
+        <DropDownContent>
+          <Item role="button" onClick={() => setLomba("CFI")}>
+            CFI
+          </Item>
+          <Item role="button" onClick={() => setLomba("Essay")}>
+            Essay
+          </Item>
+        </DropDownContent>
+      </DropDown>
+    );
   };
 
   const submit = async (e) => {
