@@ -74,20 +74,20 @@ export const TopLine = styled.p`
 
 export const Heading = styled.h1`
   margin-bottom: 24px;
-  font-size: 48px;
+  font-size: 24px;
   line-height: 1.1;
   font-weight: 600;
   color: ${({ lightText }) => (lightText ? "#fff" : "#333")};
 
   @media screen and (max-width: 480px) {
-    font-size: 32px;
+    font-size: 24px;
   }
 `;
 
 export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? "#fff" : "#333")};
 `;
