@@ -13,6 +13,8 @@ import {
   Icon,
   FormContent,
   Text,
+  TextBawah,
+  DropDiv,
 } from "./SigninElement";
 
 const Register = () => {
@@ -152,7 +154,14 @@ const Register = () => {
               placeholder="Name 2"
               onChange={(e) => setMember2(e.target.value)}
             />
-            <div className="upload-section">
+            <p>
+              Student ID Verification
+              <br /> (compile your team captain and team members' student ID
+              cards in a .pdf file)
+              <br />
+              <br />
+            </p>
+            <DropDiv>
               <Dropzone
                 onDrop={onDrop}
                 onDragEnter={() => updateBorder("over")}
@@ -164,7 +173,9 @@ const Register = () => {
                     ref={dropRef}
                   >
                     <input {...getInputProps()} />
-                    <p>Drag and drop a file OR click here to select a file</p>
+                    <TextBawah>
+                      Drag and drop the file OR click here to select a file
+                    </TextBawah>
                     {file && (
                       <div>
                         <strong>Selected file:</strong> {file.name}
@@ -192,7 +203,7 @@ const Register = () => {
                   <p>Image preview will be shown here after selection</p>
                 </div>
               )}
-            </div>
+            </DropDiv>
 
             <FormButton type="submit">Continue</FormButton>
           </Form>

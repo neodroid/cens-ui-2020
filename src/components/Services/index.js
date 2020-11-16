@@ -1,6 +1,6 @@
 import React from "react";
 import Icon1 from "../../images/logo_cfi.png";
-import Icon2 from "../../images/logo_ns.png";
+import Icon2 from "../../images/Home_SummitButton.png";
 import {
   ServicesContainer,
   ServicesH1,

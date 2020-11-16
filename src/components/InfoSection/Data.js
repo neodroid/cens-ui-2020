@@ -90,7 +90,7 @@ export const cfiObjOne = {
 
   buttonLabel: "Learn More",
   // imgStart: true,
-  img: require("../../images/TanganKotak.png"),
+  img: require("../../images/CFI_Icon.png"),
   alt: "logo",
   dark: true,
   primary: true,
@@ -116,7 +116,7 @@ export const nsObjOne = {
 
   buttonLabel: "Learn More",
   // imgStart: true,
-  img: require("../../images/OrangKotak.png"),
+  img: require("../../images/Summit_Icon.png"),
   alt: "logo",
   dark: true,
   primary: true,

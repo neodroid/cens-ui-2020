@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Container = styled.div`
-  height: 1300px;
+  height: 1400px;
   /* position: absolute; */
   bottom: 0;
   left: 0;
@@ -27,6 +27,16 @@ export const FormWrap = styled.div`
 
   @media screen and (max-width: 400px) {
     height: 80%;
+  }
+`;
+
+export const DropDiv = styled.div`
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 5px;
+  border: 5px;
+  border-color: #333;
+  @media screen and (max-width: 400px) {
   }
 `;
 
@@ -186,5 +196,22 @@ export const Item = styled.a`
   max-width: 90vw;
   &:hover {
     background-color: #333;
+  }
+`;
+
+export const TextBawah = styled.p`
+  /* max-width: 100vw;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left; */
+  color: #333;
+  cursor: pointer;
+  /* border: 1px solid; */
+  max-width: 90vw;
+  &:hover {
+    /* background-color: #333; */
+    color: #094f8a;
   }
 `;
