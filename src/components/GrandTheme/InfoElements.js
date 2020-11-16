@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
   color: #fff;
-  background: ${({ lightBg }) => (lightBg ? "#fff" : "#333")};
-  background-image: url(${(props) => props.img});
+  background: ${({ lightBg }) => (lightBg ? "#fff" : "#E6EDF3")};
+  /* background-image: url(${(props) => props.img});
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
+  background-color: #e6edf3;
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -16,7 +17,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 600px;
+  /* height: 600px; */
   /* height: 840px; */
   width: 100%;
   max-width: 1100px;
@@ -24,9 +25,6 @@ export const InfoWrapper = styled.div`
   margin-left: auto;
   padding: 0 24px;
   justify-content: center;
-  @media screen and (max-width: 768px) {
-    height: 900px;
-  }
 `;
 
 export const InfoRow = styled.div`
@@ -63,7 +61,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-  color: #01bf71;
+  color: #333;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -77,7 +75,7 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? "#fff" : "#333")};
+  color: ${({ lightText }) => (lightText ? "#333" : "#333")};
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
@@ -89,7 +87,7 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ darkText }) => (darkText ? "#fff" : "#333")};
+  color: ${({ darkText }) => (darkText ? "#333" : "#333")};
 `;
 
 export const BtnWrap = styled.div`

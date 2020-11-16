@@ -1,6 +1,7 @@
 import React from "react";
 import LogoAbout from "../components/LogoAbout";
-import { aboutObjOne } from "../components/InfoSection/Data";
+import GrandTheme from "../components/GrandTheme";
+import { aboutObjOne, aboutObjTwo } from "../components/InfoSection/Data";
 import AboutBanner from "../components/AboutBanner";
 
 const AboutPage = () => {
@@ -8,6 +9,7 @@ const AboutPage = () => {
     <>
       <AboutBanner />
       <LogoAbout {...aboutObjOne} />
+      <GrandTheme {...aboutObjTwo} />
     </>
   );
 };

@@ -1,6 +1,8 @@
 import React from "react";
-import Icon1 from "../../images/logo_cfi.png";
-import Icon2 from "../../images/logo_ns.png";
+import Icon1 from "../../images/card3.png";
+import Icon2 from "../../images/card2.png";
+
+import Icon3 from "../../images/card1.png";
 import {
   ServicesContainer,
   ServicesH1,
@@ -36,7 +38,7 @@ const NSTheme = () => {
             by maximizing resource efficiency”
           </ServicesP>
         </ServicesCard>
-        <ServicesCard img={Icon2}>
+        <ServicesCard img={Icon3}>
           {/* <ServicesIcon src={Icon2}></ServicesIcon> */}
           <ServicesH2>Chamber 3: Nature and Biodiversity</ServicesH2>
           <ServicesP>

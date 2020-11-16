@@ -47,6 +47,31 @@ export const aboutObjOne = {
   bg: Bg1,
 };
 
+export const aboutObjTwo = {
+  id: "logo",
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: "",
+  headline: "Grand Theme",
+  description1:
+    "In parallel with the development of human society, the built environment has undergone improvement related to adaptation in response to disasters linked to climate change. Unfortunately, the pace at which adaptation takes place is not as rapid as changes in the current environment. This year's CENS UI is motivated by these challenges and recurring problems regarding climate resilience. We hope to participate in providing concrete solutions related to climate resilient infrastructure and gather fresh ideas of effective solutions to this matter.",
+  description2:
+    "Three wings represents the Three Pillars of Higher Education. It's curve represents the flexibility of knowledge, just as CENS strives to become. ",
+  description3:
+    "Gradient in the color indicates the process towards a better future.",
+  description4: "The blue color portrays intelligence and technology.",
+
+  buttonLabel: "Learn More",
+  imgStart: false,
+  img: require("../../images/PageAboutUs_Pot.png"),
+  alt: "logo",
+  dark: true,
+  primary: true,
+  darkText: false,
+  bg: Bg1,
+};
+
 export const cfiObjOne = {
   id: "logo",
   lightBg: true,

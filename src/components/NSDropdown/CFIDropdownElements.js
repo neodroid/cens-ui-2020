@@ -138,6 +138,8 @@ export const DropDownContent = styled.div`
 `;
 
 export const DropDown = styled.div`
+  align-items: center;
+  justify-content: center;
   margin-bottom: 32px;
   background-color: #094f8a;
   display: inline-block;

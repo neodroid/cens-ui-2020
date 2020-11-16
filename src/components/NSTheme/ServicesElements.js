@@ -43,7 +43,7 @@ export const ServicesCard = styled.div`
   background-size: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   /* align-items: bottom; */
   text-align: center;
   border-radius: 10px;
