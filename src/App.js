@@ -10,6 +10,7 @@ import CFIPage from "./pages/cfi";
 import SummitPage from "./pages/summit";
 import PartnersPage from "./pages/partners";
 import AboutPage from "./pages/about";
+import Success from "./pages/success";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,6 +29,7 @@ function App() {
         <Route path="/summit" component={SummitPage} exact />
         <Route path="/partners" component={PartnersPage} exact />
         <Route path="/about" component={AboutPage} exact />
+        <Route path="/success" component={Success} exact />
       </Switch>
       <Footer />
     </Router>

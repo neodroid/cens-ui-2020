@@ -105,7 +105,7 @@ const Register = () => {
           },
         }
       );
-      history.push("/");
+      history.push("/success");
     } else {
       setErrorMsg("Please select a file to add");
     }
