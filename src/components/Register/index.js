@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import Axios from "axios";
 import Dropzone from "react-dropzone";
@@ -15,7 +15,34 @@ import {
   Text,
   TextBawah,
   DropDiv,
+  DropDownContent,
+  DropDown,
+  Dropbtn,
+  Item,
 } from "./SigninElement";
+
+function Menu({ items, value, onChange, placeholder, showFlag }) {
+  const [selected, setSelected] = useState("CFI");
+
+  useEffect(() => {
+    if (onChange) onChange(selected);
+  }, [selected, onChange]);
+
+  return (
+    <DropDown role="button" tabIndex={-1}>
+      <Dropbtn>{selected}</Dropbtn>
+
+      <DropDownContent>
+        <Item role="button" onClick={() => setSelected("CFI")}>
+          CFI
+        </Item>
+        <Item role="button" onClick={() => setSelected("Essay")}>
+          Essay
+        </Item>
+      </DropDownContent>
+    </DropDown>
+  );
+}
 
 const Register = () => {
   const [lomba, setLomba] = useState();
@@ -92,12 +119,14 @@ const Register = () => {
         <FormContent>
           <Form action="#" onSubmit={submit} enctype="multipart/form-data">
             <FormLabel htmlFor="for">Jenis Lomba</FormLabel>
+            <Menu />
+            {/* <FormLabel htmlFor="for">Jenis Lomba</FormLabel>
             <FormInput
               type="text"
               required
               placeholder="Lomba"
               onChange={(e) => setLomba(e.target.value)}
-            />
+            /> */}
             <FormLabel htmlFor="for">Team Name</FormLabel>
             <FormInput
               type="text"

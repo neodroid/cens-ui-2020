@@ -171,7 +171,7 @@ export const DropDown = styled.div`
   }
 
   &:hover {
-    color: #333;
+    color: #e6edf3;
   }
 `;
 export const Dropbtn = styled.div`
@@ -195,7 +195,7 @@ export const Item = styled.a`
   /* border: 1px solid; */
   max-width: 90vw;
   &:hover {
-    background-color: #333;
+    background-color: #e6edf3;
   }
 `;
 
