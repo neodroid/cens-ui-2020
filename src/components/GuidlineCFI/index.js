@@ -23,7 +23,13 @@ const GuidelineCFI = () => {
       return (
         <>
           <ServicesH2>
-            1. Download our Term of Reference <Link>CLICK HERE</Link>
+            1. Download our Term of Reference{" "}
+            <a
+              target="_blank"
+              href="https://drive.google.com/u/0/uc?id=1XnT_md_qvpkfR_PAp4soDl4kwV819B5l&export=download"
+            >
+              CLICK HERE
+            </a>
             <br />
             <br />
             2. Built up a team of 3 Members
@@ -37,7 +43,12 @@ const GuidelineCFI = () => {
             <br />
             <br />
             5. Here’s a template to help you out template{" "}
-            <Link>CLICK HERE</Link>
+            <a
+              target="_blank"
+              href="        https://drive.google.com/u/0/uc?id=1s4cIvUu3gycVY_rtWebx-S7t-p3HohlA&export=download"
+            >
+              CLICK HERE
+            </a>
           </ServicesH2>
         </>
       );

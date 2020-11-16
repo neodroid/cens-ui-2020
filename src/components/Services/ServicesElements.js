@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link as LinkR } from "react-router-dom";
 
 export const ServicesContainer = styled.div`
   height: 800px;
@@ -103,7 +104,7 @@ export const ServicesP = styled.p`
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled(LinkR)`
   border-radius: 50px;
   background: #09508b;
   padding: 12px 30px;
@@ -112,7 +113,6 @@ export const Button = styled.button`
   white-space: nowrap;
   outline: none;
   border: none;
-  display: flex;
   transition: all 0.2s ease-in-out;
   justify-content: center;
   align-items: center;
@@ -120,7 +120,7 @@ export const Button = styled.button`
   font-size: 16px;
   cursor: pointer;
   display: none;
-
+  text-decoration: none;
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;

@@ -32,7 +32,7 @@ const Services = () => {
             innovation by developing an innovative project that will take the
             construction industry to the next level.
           </ServicesP>
-          <Button>Learn More </Button>
+          <Button to="/cfi">Learn More </Button>
         </ServicesCard>
         <ServicesCard img={Icon2}>
           {/* <ServicesIcon src={Icon2}></ServicesIcon> */}
@@ -44,7 +44,7 @@ const Services = () => {
             progressive and sustainable shift towards a better Indonesia. All
             participants will be selected through a national essay competition.
           </ServicesP>
-          <Button>Learn More </Button>
+          <Button to="/summit">Learn More </Button>
         </ServicesCard>
       </ServicesWrapper>
     </ServicesContainer>
