@@ -22,6 +22,7 @@ import {
 } from "./SigninElement";
 
 const Register = () => {
+  const [ButtonText, setButtonText] = useState("SUBMIT");
   const [lomba, setLomba] = useState("CFI");
   const [teamName, setTeamName] = useState();
   const [university, setUniversity] = useState();
@@ -81,6 +82,7 @@ const Register = () => {
   };
 
   const submit = async (e) => {
+    setButtonText("LOADING");
     e.preventDefault();
     if (file) {
       const formData = new FormData();
@@ -108,6 +110,7 @@ const Register = () => {
       history.push("/success");
     } else {
       setErrorMsg("Please select a file to add");
+      setButtonText("SUBMIT");
     }
   };
   return (
@@ -231,8 +234,8 @@ const Register = () => {
                 </div>
               )}
             </DropDiv>
-
-            <FormButton type="submit">Continue</FormButton>
+            <p>{errorMsg}</p>
+            <FormButton type="submit">{ButtonText}</FormButton>
           </Form>
         </FormContent>
       </FormWrap>
