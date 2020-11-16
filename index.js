@@ -31,3 +31,6 @@ mongoose.connect(
     console.log("MongoDB connection established");
   }
 );
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("frontend/build"));
+}
