@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
+import Bg1 from "../../images/LogoNavbar.png";
 import {
   Nav,
   NavbarContainer,
@@ -12,6 +13,8 @@ import {
   NavBtnLink,
   LogoImage,
   NavbarDropdownContent,
+  ImgWrap,
+  Img,
 } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
@@ -34,8 +37,9 @@ const Navbar = ({ toggle }) => {
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <NavLogo to="/" scrollNav={scrollNav}>
-            cens
-            {/* <LogoImage /> */}
+            <ImgWrap>
+              <Img src={Bg1} />
+            </ImgWrap>
           </NavLogo>
           <MobileIcon onClick={toggle} scrollNav={scrollNav}>
             <FaBars />

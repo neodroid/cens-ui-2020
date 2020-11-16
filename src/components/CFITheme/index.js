@@ -12,12 +12,17 @@ import {
   ServicesCard,
   ServicesCardInside,
   Button,
+  ServicesP1,
 } from "./ServicesElements";
 
 const CFITheme = () => {
   return (
     <ServicesContainer>
       <ServicesH1>Themes</ServicesH1>
+      <ServicesP1>
+        "Innovation in The Built Enviroment for Climate Change Adaptation and
+        Mitigation"
+      </ServicesP1>
       <ServicesWrapper>
         <ServicesCard img={Icon1}>
           {/* <ServicesIcon src={Icon1} /> */}

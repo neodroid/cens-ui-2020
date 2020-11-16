@@ -76,14 +76,15 @@ export const NavItem = styled.li`
 
 export const NavbarDropdownContent = styled.div`
   border-radius: 50;
-  margin-top: 130px;
+  margin-top: 150px;
+
   display: none;
   color: #333;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0, 2);
-  padding: 12px 16px;
+  padding: 12px 12px;
   z-index: 1;
 `;
 
@@ -146,4 +147,15 @@ export const LogoImage = styled.img`
   src: url(${Icon1});
   width: 100%;
   height: 100%;
+`;
+
+export const ImgWrap = styled.div`
+  max-width: 100px;
+  height: 100%;
+`;
+
+export const Img = styled.img`
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding-right: 0;
 `;
