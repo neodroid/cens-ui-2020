@@ -4,6 +4,7 @@ import SummitBanner from "../components/SummitBanner";
 import { nsObjOne } from "../components/InfoSection/Data";
 import NSDropdown from "../components/NSDropdown";
 import TimelineNS from "../components/TimelineNS";
+import GuidelineNS from "../components/GuidelineNS";
 
 const SummitPage = () => {
   return (
@@ -12,6 +13,7 @@ const SummitPage = () => {
       <NSTheme />
       <NSDropdown />
       <TimelineNS />
+      <GuidelineNS />
     </>
   );
 };

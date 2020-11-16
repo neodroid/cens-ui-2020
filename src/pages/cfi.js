@@ -4,6 +4,7 @@ import CFIBanner from "../components/CFIBanner";
 import { cfiObjOne } from "../components/InfoSection/Data";
 import CFIDropdown from "../components/CFIDropdown";
 import TimelineCFI from "../components/TimelineCFI";
+import GuidelineCFI from "../components/GuidlineCFI";
 
 const CFIPage = () => {
   return (
@@ -12,6 +13,7 @@ const CFIPage = () => {
       <CFITheme />
       <CFIDropdown />
       <TimelineCFI />
+      <GuidelineCFI />
     </>
   );
 };
