@@ -50,6 +50,7 @@ router.get("/testing", async (req, res) => {
 router.post("/register", upload.single("file"), async (req, res) => {
   try {
     const {
+      lomba,
       teamName,
       university,
       country,
@@ -90,6 +91,7 @@ router.post("/register", upload.single("file"), async (req, res) => {
         .json({ msg: "A Team using this name has been registered" });
 
     const newParticipant = new Participant({
+      lomba,
       teamName,
       university,
       country,
