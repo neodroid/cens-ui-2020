@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
   color: #fff;
+  /* min-height: 500px; */
   background: ${({ lightBg }) => (lightBg ? "#fff" : "#E6EDF3")};
   /* background-image: url(${(props) => props.img});
   background-repeat: no-repeat;

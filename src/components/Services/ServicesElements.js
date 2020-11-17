@@ -2,12 +2,16 @@ import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 
 export const ServicesContainer = styled.div`
-  height: 800px;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #010606;
+  background-image: url(${(props) => props.img});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   @media screen and (max-width: 768px) {
     height: 1100px;

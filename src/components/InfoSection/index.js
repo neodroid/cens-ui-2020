@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "../ButtonElement";
-import Bg1 from "../../images/pagehome_about.png";
+import Bg1 from "../../images/HomeBG.jpg";
 import {
   InfoContainer,
   InfoWrapper,

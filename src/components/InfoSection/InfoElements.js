@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const InfoContainer = styled.div`
+  /* height: 700px; */
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? "#fff" : "#000")};
   background-image: url(${(props) => props.img});
@@ -16,7 +17,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  /* height: 600px; */
+  height: 600px;
   /* height: 840px; */
   width: 100%;
   max-width: 1100px;

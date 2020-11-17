@@ -14,7 +14,7 @@ export const homeObjOne = {
 
   buttonLabel: "Learn More",
   imgStart: false,
-  img: require("../../images/logo.png"),
+  img: require("../../images/Home_Aboutusicon.png"),
   alt: "logo",
   dark: true,
   primary: true,
@@ -64,7 +64,7 @@ export const aboutObjTwo = {
 
   buttonLabel: "Learn More",
   imgStart: false,
-  img: require("../../images/PageAboutUs_Pot.png"),
+  img: require("../../images/AboutUS_GrandTheme.png"),
   alt: "logo",
   dark: true,
   primary: true,

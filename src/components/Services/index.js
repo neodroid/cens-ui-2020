@@ -1,6 +1,7 @@
 import React from "react";
-import Icon1 from "../../images/logo_cfi.png";
+import Icon1 from "../../images/Home_CFIicon.png";
 import Icon2 from "../../images/Home_SummitButton.png";
+import Bg1 from "../../images/HomeBG.jpg";
 import {
   ServicesContainer,
   ServicesH1,
@@ -15,7 +16,7 @@ import {
 
 const Services = () => {
   return (
-    <ServicesContainer>
+    <ServicesContainer img={Bg1}>
       <ServicesH1>Events</ServicesH1>
       <ServicesWrapper>
         <ServicesCard img={Icon1}>
