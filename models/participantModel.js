@@ -2,7 +2,8 @@ const mongoose = require("mongoose");
 
 const participantSchema = new mongoose.Schema(
   {
-    teamName: { type: String, required: true, unique: true },
+    lomba: { type: String, required: true },
+    teamName: { type: String, required: true },
     university: { type: String, required: true },
     country: { type: String, required: true },
     teamCaptain: { type: String, required: true },
