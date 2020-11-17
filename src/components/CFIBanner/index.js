@@ -44,9 +44,8 @@ const CFIBanner = ({
                 <Subtitle darktext={darktext}>
                   {description1}
                   <br />
-                  <br />
+
                   {description2}
-                  <br />
                   <br />
                   {description3}
                 </Subtitle>

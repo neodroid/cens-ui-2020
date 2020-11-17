@@ -16,7 +16,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 600px;
+  max-height: 400px;
   /* height: 840px; */
   width: 100%;
   max-width: 1100px;
@@ -37,7 +37,7 @@ export const InfoRow = styled.div`
   align-items: center;
   grid-template-areas: ${({ imgStart }) =>
     imgStart ? `'col2 col1'` : `'col1 col2'`};
-
+  padding-top: 20px;
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
       imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
@@ -54,6 +54,8 @@ export const Column2 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col2;
+  align-content: center;
+  justify-content: center;
 `;
 
 export const TextWrapper = styled.div`
@@ -100,10 +102,13 @@ export const BtnWrap = styled.div`
 export const ImgWrap = styled.div`
   max-width: 555px;
   height: 100%;
+  margin-bottom: 70px;
+  /* background-color: black; */
 `;
 
 export const Img = styled.img`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
+  /* background-color: black; */
 `;

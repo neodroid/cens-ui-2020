@@ -12,7 +12,7 @@ import {
   FormWrap,
   Icon,
   FormContent,
-  Text,
+  ArrowDownLang,
   TextBawah,
   DropDiv,
   DropDownContent,
@@ -67,7 +67,10 @@ const Register = () => {
 
     return (
       <DropDown role="button" tabIndex={-1}>
-        <Dropbtn>{lomba}</Dropbtn>
+        <Dropbtn>
+          {lomba}
+          <ArrowDownLang />
+        </Dropbtn>
 
         <DropDownContent>
           <Item role="button" onClick={() => setLomba("CFI")}>

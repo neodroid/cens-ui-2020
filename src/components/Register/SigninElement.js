@@ -147,7 +147,18 @@ export const DropDownContent = styled.div`
   border: none;
   border-radius: 4px;
 `;
-
+export const ArrowDownLang = styled.div`
+  border: solid black;
+  /* color: #333; */
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  position: relative;
+  left: 6px;
+  top: -2px;
+  transition: all 0.6s;
+  align-self: flex-end;
+`;
 export const DropDown = styled.div`
   margin-bottom: 32px;
   background-color: #fff;
@@ -163,6 +174,13 @@ export const DropDown = styled.div`
   &:focus,
   &:active {
     background-color: rgba(0, 0, 0, 0.1);
+  }
+  & ${ArrowDownLang} {
+    transform: rotate(45deg);
+  }
+
+  &:focus ${ArrowDownLang}, &:active ${ArrowDownLang} {
+    transform: rotate(225deg);
   }
 
   &:focus ${DropDownContent}, &:active ${DropDownContent} {

@@ -17,7 +17,7 @@ export const InfoWrapper = styled.div`
   display: grid;
 
   z-index: 1;
-  height: 500px;
+  width: 710px;
   /* height: 840px; */
   width: 100%;
   max-width: 1100px;
@@ -94,6 +94,7 @@ export const Heading = styled.h1`
 export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
+  /* letter-spacing:1.5; */
   font-size: 14px;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
@@ -107,6 +108,7 @@ export const BtnWrap = styled.div`
 export const ImgWrap = styled.div`
   max-width: 300px;
   height: 70%;
+  margin-bottom: 60px;
 `;
 
 export const Img = styled.img`

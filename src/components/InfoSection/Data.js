@@ -39,7 +39,7 @@ export const aboutObjOne = {
 
   buttonLabel: "Learn More",
   imgStart: true,
-  img: require("../../images/logo.png"),
+  img: require("../../images/LogoNavbar.png"),
   alt: "logo",
   dark: true,
   primary: true,
