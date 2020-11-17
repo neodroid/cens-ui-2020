@@ -147,14 +147,26 @@ export const DropDownContent = styled.div`
   border: none;
   border-radius: 4px;
 `;
+export const ArrowDiv = styled.div`
+  /* background-color: black; */
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+`;
+
 export const ArrowDownLang = styled.div`
   border: solid black;
   /* color: #333; */
-  border-width: 0 2px 2px 0;
+  border-width: 0 3px 3px 0;
   display: inline-block;
-  padding: 3px;
+  padding: 5px;
   position: relative;
-  left: 6px;
+  /* right: 100px; */
+  /* top: 20px; */
+  margin-right: 10px;
+  margin-bottom: 4px;
+  /* right: 0px;
+  left: 6px; */
   top: -2px;
   transition: all 0.6s;
   align-self: flex-end;
@@ -194,8 +206,9 @@ export const DropDown = styled.div`
 `;
 export const Dropbtn = styled.div`
   color: #333;
-  display: inline-block;
+  display: flex;
   text-align: center;
+  flex-direction: row;
   padding: 14px 16px;
   text-decoration: none;
   /* border: 1px solid;

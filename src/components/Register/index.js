@@ -10,7 +10,7 @@ import {
   FormInput,
   FormLabel,
   FormWrap,
-  Icon,
+  ArrowDiv,
   FormContent,
   ArrowDownLang,
   TextBawah,
@@ -69,7 +69,10 @@ const Register = () => {
       <DropDown role="button" tabIndex={-1}>
         <Dropbtn>
           {lomba}
-          <ArrowDownLang />
+          <ArrowDiv>
+            {" "}
+            <ArrowDownLang />
+          </ArrowDiv>
         </Dropbtn>
 
         <DropDownContent>
