@@ -32,6 +32,6 @@ mongoose.connect(
     console.log("MongoDB connection established");
   }
 );
-app.get("*", (req, res) => {
+app.get("/", (req, res) => {
   res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));
 });
