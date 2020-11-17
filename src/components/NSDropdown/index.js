@@ -4,12 +4,12 @@ import {
   Form,
   FormButton,
   FormH1,
-  FormInput,
-  FormLabel,
+  ArrowDownLang,
+  ArrowDiv,
   FormWrap,
   Icon,
   FormContent,
-  Text,
+  TextButton,
   DropDown,
   Dropbtn,
   DropDownContent,
@@ -24,7 +24,16 @@ function Menu1({ items, value, onChange, placeholder, showFlag }) {
 
   return (
     <DropDown role="button" tabIndex={-1}>
-      <Dropbtn>Chamber 1: Infrastructure & Disaster Risk Reduction</Dropbtn>
+      {/* <Dropbtn>Chamber 1: Infrastructure & Disaster Risk Reduction</Dropbtn> */}
+      <Dropbtn>
+        <TextButton>
+          Chamber 1: Infrastructure & Disaster Risk Reduction
+        </TextButton>
+
+        <ArrowDiv>
+          <ArrowDownLang />
+        </ArrowDiv>
+      </Dropbtn>
       <DropDownContent>
         In parallel with the development of human society, cities have undergone
         improvement related to adaptation in response to disasters that have
@@ -45,7 +54,14 @@ function Menu2({ items, value, onChange, placeholder, showFlag }) {
 
   return (
     <DropDown role="button" tabIndex={-1}>
-      <Dropbtn>Chamber 2: Resource Use & Waste Management</Dropbtn>
+      {/* <Dropbtn>Chamber 2: Resource Use & Waste Management</Dropbtn> */}
+      <Dropbtn>
+        <TextButton>Chamber 2: Resource Use & Waste Management</TextButton>
+
+        <ArrowDiv>
+          <ArrowDownLang />
+        </ArrowDiv>
+      </Dropbtn>
       <DropDownContent>
         Waste management is a major global issue that governments face daily.
         Excessive use of raw materials leads to overproduction of waste, which
@@ -67,7 +83,14 @@ function Menu3({ items, value, onChange, placeholder, showFlag }) {
 
   return (
     <DropDown role="button" tabIndex={-1}>
-      <Dropbtn>Chamber 3: Nature and Biodiversity</Dropbtn>
+      {/* <Dropbtn>Chamber 3: Nature and Biodiversity</Dropbtn> */}
+      <Dropbtn>
+        <TextButton>Chamber 3: Nature and Biodiversity</TextButton>
+
+        <ArrowDiv>
+          <ArrowDownLang />
+        </ArrowDiv>
+      </Dropbtn>
       <DropDownContent>
         Historically, cities development have focused primarily on “grey”
         infrastructure, increasingly disrupting cities’ natural systems which

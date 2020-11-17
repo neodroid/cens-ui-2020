@@ -138,7 +138,7 @@ export const DropDownContent = styled.div`
 `;
 export const ArrowDiv = styled.div`
   /* background-color: black; */
-  width: 35%;
+  width: 5%;
   display: flex;
   justify-content: flex-end;
 `;
