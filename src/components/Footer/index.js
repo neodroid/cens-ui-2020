@@ -30,9 +30,10 @@ const Footer = () => {
           <FooterLinkWrapper>
             <FooterLinkItems>
               <FooterLink to="/">Home</FooterLink>
-              <FooterLink to="/">About Us</FooterLink>
-              <FooterLink to="/">Partners</FooterLink>
-              <FooterLink to="/">Events</FooterLink>
+              <FooterLink to="/about">About Us</FooterLink>
+              {/* <FooterLink to="/">Partners</FooterLink> */}
+              <FooterLink to="/cfi">CFI</FooterLink>
+              <FooterLink to="/summit">National Summit</FooterLink>
               <FooterLink to="/register">Register</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>

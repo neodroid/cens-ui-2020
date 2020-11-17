@@ -11,6 +11,7 @@ import SummitPage from "./pages/summit";
 import PartnersPage from "./pages/partners";
 import AboutPage from "./pages/about";
 import Success from "./pages/success";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,6 +21,7 @@ function App() {
   };
   return (
     <Router>
+      <ScrollToTop />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <Switch>
