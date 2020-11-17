@@ -16,7 +16,6 @@ import {
 } from "./SigninElement";
 
 const Register = () => {
-  const [lomba, setLomba] = useState();
   const [teamName, setTeamName] = useState();
   const [university, setUniversity] = useState();
   const [country, setCountry] = useState();
@@ -57,7 +56,6 @@ const Register = () => {
     e.preventDefault();
     if (file) {
       const formData = new FormData();
-      formData.append("lomba", lomba);
       formData.append("teamName", teamName);
       formData.append("university", university);
       formData.append("country", country);
@@ -86,13 +84,6 @@ const Register = () => {
         <FormContent>
           <Form action="#" onSubmit={submit} enctype="multipart/form-data">
             <FormH1>Register your team!</FormH1>
-            <FormLabel htmlFor="for">Jenis Lomba</FormLabel>
-            <FormInput
-              type="text"
-              required
-              placeholder="Lomba"
-              onChange={(e) => setLomba(e.target.value)}
-            />
             <FormLabel htmlFor="for">Team Name</FormLabel>
             <FormInput
               type="text"
@@ -118,7 +109,7 @@ const Register = () => {
             <FormInput
               type="text"
               required
-              placeholder="Name"
+              placeholder="placeholder"
               onChange={(e) => setTeamCaptain(e.target.value)}
             />
             <FormLabel htmlFor="for">Team Captain's Email</FormLabel>
@@ -128,7 +119,7 @@ const Register = () => {
               placeholder="Email"
               onChange={(e) => setCaptainEmail(e.target.value)}
             />
-            <FormLabel htmlFor="for">Team Captain's Phone Number</FormLabel>
+            <FormLabel htmlFor="for">Team Captain's Email</FormLabel>
             <FormInput
               type="number"
               required

@@ -3,11 +3,12 @@ const Participant = require("../models/participantModel");
 const multer = require("multer");
 const path = require("path");
 const router = express.Router();
+const fs = require("fs");
 
 const upload = multer({
   storage: multer.diskStorage({
     destination(req, file, cb) {
-      cb(null, "./files");
+      cb(null, "routes/files");
     },
     filename(req, file, cb) {
       cb(null, `${new Date().getTime()}_${file.originalname}`);
@@ -28,29 +29,9 @@ const upload = multer({
   },
 });
 
-router.get("/testing", async (req, res) => {
-  try {
-    const participant = new Participant({
-      teamName: "Neodroid",
-      university: "Universitas Indonesia",
-      country: "Indonesia",
-      teamCaptain: "Kevin",
-      captainEmail: "Kevin@gmail.com",
-      captainNumber: "085945644450",
-      member1: "Saffan",
-      member2: "Jonathan",
-    });
-    const newParticipant = await participant.save();
-    res.send(newParticipant);
-  } catch (error) {
-    res.send({ message: error.message });
-  }
-});
-
 router.post("/register", upload.single("file"), async (req, res) => {
   try {
     const {
-      lomba,
       teamName,
       university,
       country,
@@ -60,7 +41,12 @@ router.post("/register", upload.single("file"), async (req, res) => {
       member1,
       member2,
     } = req.body;
-    const { path, mimetype } = req.file;
+    const file = {
+      data: fs.readFileSync(
+        path.join(__dirname + "/files/" + req.file.filename)
+      ),
+      contentType: "application/pdf",
+    };
 
     //Making sure all fields are filled
     if (
@@ -91,7 +77,6 @@ router.post("/register", upload.single("file"), async (req, res) => {
         .json({ msg: "A Team using this name has been registered" });
 
     const newParticipant = new Participant({
-      lomba,
       teamName,
       university,
       country,
@@ -100,8 +85,7 @@ router.post("/register", upload.single("file"), async (req, res) => {
       captainNumber,
       member1,
       member2,
-      file_path: path,
-      file_mimetype: mimetype,
+      file,
     });
     const registeredParticipant = await newParticipant.save();
     res.json(registeredParticipant);
