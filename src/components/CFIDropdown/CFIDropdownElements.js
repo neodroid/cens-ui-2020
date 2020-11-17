@@ -136,7 +136,36 @@ export const DropDownContent = styled.div`
   border: none;
   border-radius: 4px;
 `;
+export const ArrowDiv = styled.div`
+  /* background-color: black; */
+  width: 35%;
+  display: flex;
+  justify-content: flex-end;
+`;
 
+export const ArrowDownLang = styled.div`
+  border: solid white;
+  /* color: #333; */
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  position: relative;
+  margin-bottom: 4px;
+  /* right: 100px; */
+  /* top: 20px; */
+  /* margin-right: 10px;
+   
+  /* right: 0px;
+  left: 6px; */
+  top: -2px;
+  transition: all 0.6s;
+  align-self: flex-end;
+`;
+
+export const TextButton = styled.p`
+  width: 90%;
+  text-align: left;
+`;
 export const DropDown = styled.div`
   margin-bottom: 32px;
   background-color: #094f8a;
@@ -151,8 +180,15 @@ export const DropDown = styled.div`
 
   &:focus,
   &:active {
-    background-color: rgba(0, 0, 0, 0.1);
+    /* background-color: rgba(0, 0, 0, 0.1); */
     border: none;
+  }
+  & ${ArrowDownLang} {
+    transform: rotate(45deg);
+  }
+
+  &:focus ${ArrowDownLang}, &:active ${ArrowDownLang} {
+    transform: rotate(225deg);
   }
 
   &:focus ${DropDownContent}, &:active ${DropDownContent} {
@@ -166,8 +202,9 @@ export const DropDown = styled.div`
 `;
 export const Dropbtn = styled.div`
   color: #fff;
-  display: inline-block;
+  display: flex;
   text-align: center;
+  flex-direction: row;
   padding: 14px 16px;
   text-decoration: none;
   /* border: 1px solid;

@@ -7,12 +7,13 @@ import {
   FormInput,
   FormLabel,
   FormWrap,
-  Icon,
+  ArrowDiv,
   FormContent,
-  Text,
+  ArrowDownLang,
   DropDown,
   Dropbtn,
   DropDownContent,
+  TextButton,
 } from "./CFIDropdownElements";
 
 function Menu1({ items, value, onChange, placeholder, showFlag }) {
@@ -24,7 +25,13 @@ function Menu1({ items, value, onChange, placeholder, showFlag }) {
 
   return (
     <DropDown role="button" tabIndex={-1}>
-      <Dropbtn>Resilient infrastructure & city systems:</Dropbtn>
+      <Dropbtn>
+        <TextButton>Resilient infrastructure & city systems</TextButton>
+
+        <ArrowDiv>
+          <ArrowDownLang />
+        </ArrowDiv>
+      </Dropbtn>
       <DropDownContent>
         -Preparation of climate resilience plans based on present and future
         city vulnerabilities;
@@ -49,7 +56,13 @@ function Menu2({ items, value, onChange, placeholder, showFlag }) {
 
   return (
     <DropDown role="button" tabIndex={-1}>
-      <Dropbtn>Nature-based solutions:</Dropbtn>
+      <Dropbtn>
+        <TextButton>Nature-based solutions</TextButton>
+
+        <ArrowDiv>
+          <ArrowDownLang />
+        </ArrowDiv>
+      </Dropbtn>
       <DropDownContent>
         Biophilic Design, Urban Wetlands, Urban Forests, Urban Green Space,
         Rivers, Floodplains, and more...
@@ -80,7 +93,13 @@ function Menu3({ items, value, onChange, placeholder, showFlag }) {
 
   return (
     <DropDown role="button" tabIndex={-1}>
-      <Dropbtn>High tech construction/advanced materials:</Dropbtn>
+      <Dropbtn>
+        <TextButton>High tech construction/advanced materials</TextButton>
+
+        <ArrowDiv>
+          <ArrowDownLang />
+        </ArrowDiv>
+      </Dropbtn>
       <DropDownContent>
         Digitalization, robotics, 3D printing, artificial intelligence, and
         more...
@@ -109,7 +128,13 @@ function Menu4({ items, value, onChange, placeholder, showFlag }) {
 
   return (
     <DropDown role="button" tabIndex={-1}>
-      <Dropbtn>Judging Criteria:</Dropbtn>
+      <Dropbtn>
+        <TextButton>Judging Criteria</TextButton>
+
+        <ArrowDiv>
+          <ArrowDownLang />
+        </ArrowDiv>
+      </Dropbtn>
       <DropDownContent>
         Innovation: Is the solution innovative and original?
         <br />

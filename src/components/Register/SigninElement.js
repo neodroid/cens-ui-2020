@@ -135,7 +135,7 @@ export const Text = styled.span`
 ////////////////////////////////////////
 //DROPDOWN LANGUAGE
 export const DropDownContent = styled.div`
-  width: 550px;
+  width: 530px;
   display: none;
   position: absolute;
   background-color: #f0f0f0;

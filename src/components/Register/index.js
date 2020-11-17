@@ -70,7 +70,6 @@ const Register = () => {
         <Dropbtn>
           {lomba}
           <ArrowDiv>
-            {" "}
             <ArrowDownLang />
           </ArrowDiv>
         </Dropbtn>
