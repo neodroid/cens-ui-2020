@@ -7,7 +7,7 @@ const fs = require("fs");
 
 const upload = multer({
   storage: multer.diskStorage({
-    destination(req, file, cb) {
+    destination: (req, file, cb) => {
       cb(null, "routes/files");
     },
     filename(req, file, cb) {
@@ -15,7 +15,7 @@ const upload = multer({
     },
   }),
   limits: {
-    fileSize: 1000000, // max file size 1MB = 1000000 bytes
+    fileSize: 5000000, // max file size 1MB = 1000000 bytes
   },
   fileFilter(req, file, cb) {
     if (!file.originalname.match(/\.(jpeg|jpg|png|pdf|doc|docx|xlsx|xls)$/)) {
@@ -62,20 +62,6 @@ router.post("/register", upload.single("file"), async (req, res) => {
     ) {
       return res.status(400).json({ msg: "Not all fields have been entered" });
     }
-    const existingEmail = await Participant.findOne({
-      captainEmail: captainEmail,
-    });
-    const existingTeamName = await Participant.findOne({ teamName: teamName });
-    //Validating uniqueness of participant
-    if (existingEmail)
-      return res
-        .status(400)
-        .json({ msg: "A Team using this email has been registered" });
-
-    if (existingTeamName)
-      return res
-        .status(400)
-        .json({ msg: "A Team using this name has been registered" });
 
     const newParticipant = new Participant({
       lomba,
