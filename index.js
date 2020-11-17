@@ -4,6 +4,7 @@ const cors = require("cors");
 require("dotenv").config();
 const bodyParser = require("body-parser");
 const participantRoute = require("./routes/participantRoute");
+const path = require("path");
 
 const app = express();
 //Middleware
@@ -31,3 +32,6 @@ mongoose.connect(
     console.log("MongoDB connection established");
   }
 );
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+});
