@@ -26,7 +26,7 @@ const GuidelineCFI = () => {
             1. Download our Term of Reference{" "}
             <a
               target="_blank"
-              href="https://drive.google.com/u/0/uc?id=1XnT_md_qvpkfR_PAp4soDl4kwV819B5l&export=download"
+              href="https://drive.google.com/u/0/uc?id=12YM-GDNpMzuMlXRrFxh9X-l5UZKlSbpY&export=download"
             >
               CLICK HERE
             </a>

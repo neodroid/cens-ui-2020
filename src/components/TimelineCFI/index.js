@@ -1,7 +1,7 @@
 import React from "react";
 import Icon1 from "../../images/card6.png";
 import Icon2 from "../../images/card5.png";
-import Icon3 from "../../images/timelineCFI.png";
+import Icon3 from "../../images/timelinelomba1.png";
 import {
   ServicesContainer,
   ServicesH1,
