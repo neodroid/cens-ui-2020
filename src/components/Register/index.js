@@ -19,10 +19,12 @@ import {
   DropDown,
   Dropbtn,
   Item,
+  LoadingDiv,
 } from "./SigninElement";
 
 const Register = () => {
   const [ButtonText, setButtonText] = useState("SUBMIT");
+  const [loadingSubmit, setLoadingSubmit] = useState(0);
   const [lomba, setLomba] = useState("CFI");
   const [teamName, setTeamName] = useState();
   const [university, setUniversity] = useState();
@@ -88,6 +90,7 @@ const Register = () => {
 
   const submit = async (e) => {
     setButtonText("LOADING");
+    setLoadingSubmit(1);
     e.preventDefault();
     if (file) {
       const formData = new FormData();
@@ -116,10 +119,13 @@ const Register = () => {
     } else {
       setErrorMsg("Please select a file to add");
       setButtonText("SUBMIT");
+      setLoadingSubmit(0);
     }
   };
   return (
     <Container>
+      {loadingSubmit ? <LoadingDiv>Loading</LoadingDiv> : "</>"}
+
       <FormWrap>
         {/* <Icon to="/">cens</Icon> */}
         <FormContent>

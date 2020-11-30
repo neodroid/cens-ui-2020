@@ -246,3 +246,21 @@ export const TextBawah = styled.p`
     color: #094f8a;
   }
 `;
+
+export const LoadingDiv = styled.div`
+  width: 50%;
+
+  padding: 50px 50px;
+  /* height: 300px; */
+  position: fixed;
+  z-index: 3;
+  bottom: 100px;
+  left: 25%;
+  border-radius: 20px;
+  text-align: center;
+  text-justify: center;
+  color: white;
+  font-size: 18px;
+  /* right: 50%; */
+  background-color: #09508b;
+`;
