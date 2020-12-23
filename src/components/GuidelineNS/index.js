@@ -23,19 +23,28 @@ const GuidelineNS = () => {
       return (
         <>
           <ServicesH2>
-            1. Download Study Guide Essay{" "}
+            1. Download our Term of Reference{" "}
+            <a
+              href="https://drive.google.com/u/0/uc?id=1onk1HM8WXxFU-O6P82hs3NLA8lkmRIyG&export=download"
+              target="_blank"
+            >
+              CLICK HERE
+            </a>
+            <br />
+            <br />
+            2. Download Study Guide Essay{" "}
             <a href="https://bit.ly/CompetitionEssay" target="_blank">
               CLICK HERE
             </a>
             <br />
             <br />
-            2. Built up a team of 3 Members
+            3. Built up a team of 3 Members
             <br />
             <br />
-            3. Register on the platform
+            4. Register on the platform
             <br />
             <br />
-            4. pay the registration fee of Rp100.000,00/team to to BCA
+            5. pay the registration fee of Rp100.000,00/team to to BCA
             7651090184 (Almira Naila) in a period between November 16th 2020 and
             February 7th 2021
           </ServicesH2>
