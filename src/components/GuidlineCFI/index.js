@@ -45,8 +45,14 @@ const GuidelineCFI = () => {
             5. Here’s a template to help you out template{" "}
             <a
               target="_blank"
-              href="        https://drive.google.com/u/0/uc?id=1s4cIvUu3gycVY_rtWebx-S7t-p3HohlA&export=download"
+              href="https://drive.google.com/u/0/uc?id=1s4cIvUu3gycVY_rtWebx-S7t-p3HohlA&export=download"
             >
+              CLICK HERE
+            </a>
+            <br />
+            <br />
+            6. Download reference kit{" "}
+            <a target="_blank" href="https://bit.ly/CompetitonCFI">
               CLICK HERE
             </a>
           </ServicesH2>
