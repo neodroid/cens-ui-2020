@@ -43,7 +43,7 @@ const GuidelineNS = () => {
             <br />
             5. pay the registration fee of Rp100.000,00/team to to BCA
             7651090184 (Almira Naila) in a period between November 16th 2020 and
-            February 7th 2021
+            February 21st 2021
           </ServicesH2>
         </>
       );
