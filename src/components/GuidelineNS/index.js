@@ -24,10 +24,7 @@ const GuidelineNS = () => {
         <>
           <ServicesH2>
             1. Download our Term of Reference{" "}
-            <a
-              href="https://drive.google.com/u/0/uc?id=1onk1HM8WXxFU-O6P82hs3NLA8lkmRIyG&export=download"
-              target="_blank"
-            >
+            <a href="https://bit.ly/CompetitionEssay" target="_blank">
               CLICK HERE
             </a>
             <br />
