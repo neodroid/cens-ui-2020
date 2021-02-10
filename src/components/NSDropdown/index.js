@@ -37,7 +37,7 @@ function Menu1({ items, value, onChange, placeholder, showFlag }) {
       <DropDownContent>
         In parallel with the development of human society, cities have undergone
         improvement related to adaptation in response to disasters that have
-        occurred. Unfortunately, the pace at which cities adaptation takes place
+        occurred. Unfortunately, the pace at which city adaptation takes place
         is not as rapid as changes in today's environment due to climate change.
         In this chamber, we will together bring our ideas on improving cities’
         resilience to the ever-growing problems of climate change.
@@ -64,9 +64,9 @@ function Menu2({ items, value, onChange, placeholder, showFlag }) {
       </Dropbtn>
       <DropDownContent>
         Waste management is a major global issue that governments face daily.
-        Excessive use of raw materials leads to overproduction of waste, which
-        has had a detrimental effect on our environment. Waste reduction and
-        valorization needs to be taken to the next level. This chamber will
+        Excessive use of raw materials leads to the overproduction of waste,
+        which has had a detrimental effect on our environment. Waste reduction
+        and valorization need to be taken to the next level. This chamber will
         invite us to plan future waste management in the construction industry
         through a circular economy based on the principles of designing out
         waste and pollution.
@@ -92,9 +92,9 @@ function Menu3({ items, value, onChange, placeholder, showFlag }) {
         </ArrowDiv>
       </Dropbtn>
       <DropDownContent>
-        Historically, cities development have focused primarily on “grey”
+        Historically, city development has focused primarily on “grey”
         infrastructure, increasingly disrupting cities’ natural systems which
-        puts communities at greater risks linked to climate change. This results
+        put communities at greater risks linked to climate change. This results
         in various problems many cities are facing, ranging from air pollution,
         water supply and quality, land subsidence, and flooding. That is why in
         this chamber, we will visualize a world that is shifting from grey to
