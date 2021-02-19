@@ -112,3 +112,32 @@ export const SocialIconLink = styled.a`
   color: #fff;
   font-size: 24px;
 `;
+
+export const ImgWrap = styled.div`
+  max-width: 160px;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const Img = styled.img`
+  width: 40px;
+  margin: 0 0 10px 0;
+  padding-right: 0;
+  background: #fff;
+`;
+
+export const Img3 = styled.img`
+  width: 40px;
+  margin: 0 0 10px 0;
+  padding-right: 0;
+  /* background: #fff; */
+`;
+
+export const Img2 = styled.img`
+  width: 150px;
+  margin: 0 0 10px 0;
+  padding-right: 0;
+  background-color: "#fff";
+`;
