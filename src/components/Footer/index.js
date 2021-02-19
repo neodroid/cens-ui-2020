@@ -63,7 +63,7 @@ const Footer = () => {
               <FooterLink to="/register">Register</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
-              <FooterLinkTitle>Strategic Partners</FooterLinkTitle>
+              <FooterLinkTitle>Media Partners</FooterLinkTitle>
               <ImgWrap>
                 <Img src={Bg1} />
                 <Img src={Bg2} />
@@ -91,7 +91,7 @@ const Footer = () => {
           </FooterLinkWrapper>
           <FooterLinkWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle>Media Partners</FooterLinkTitle>
+              <FooterLinkTitle>Strategic Partners</FooterLinkTitle>
               <ImgWrap>
                 <Img2 src={Bg22} />
               </ImgWrap>
