@@ -61,7 +61,6 @@ export const TextWrapper = styled.div`
   padding-top: 0;
   padding-bottom: 60px;
   text-align: center;
-  justify-content: flex-start;
 `;
 
 export const TopLine = styled.p`
