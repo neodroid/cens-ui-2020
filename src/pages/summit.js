@@ -5,6 +5,7 @@ import { nsObjOne } from "../components/InfoSection/Data";
 import NSDropdown from "../components/NSDropdown";
 import TimelineNS from "../components/TimelineNS";
 import GuidelineNS from "../components/GuidelineNS";
+import Announcement from "../components/Announcement copy";
 
 const SummitPage = () => {
   return (
@@ -14,6 +15,7 @@ const SummitPage = () => {
       <NSDropdown />
       <TimelineNS />
       <GuidelineNS />
+      <Announcement />
     </>
   );
 };
